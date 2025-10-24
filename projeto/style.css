@@ -1,0 +1,130 @@
+/* === GERAL === */
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #1c1e21;
+}
+
+/* === CABEÇALHO / NAVBAR === */
+h1 {
+  display: none;
+}
+
+nav, .navbar {
+  background-color: #1877f2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* === CONTAINER PRINCIPAL === */
+form, .lista {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #1c1e21;
+  border-bottom: 1px solid #dddfe2;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* === FORMULÁRIO === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  border: 1px solid #ccd0d5;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  background-color: #f5f6f7;
+}
+
+input:focus {
+  border-color: #1877f2;
+  background-color: #fff;
+}
+
+button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #166fe5;
+}
+
+/* === LISTA DE PESSOAS === */
+.lista {
+  background-color: #fff;
+}
+
+.item {
+  border-bottom: 1px solid #dddfe2;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item span {
+  font-size: 15px;
+  color: #050505;
+}
+
+/* === BOTÃO DE EXCLUIR === */
+.item button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  color: #e41e3f;
+}
+
+.item button:hover {
+  background-color: #e4e6eb;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 700px) {
+  form, .lista {
+    margin: 15px;
+    padding: 15px;
+  }
+  input, button {
+    font-size: 14px;
+  }
+}
